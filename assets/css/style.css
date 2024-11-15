@@ -9,7 +9,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+:root{
+    --swiper-theme-color:  #444a34;
+}
 
 .container{
     max-width: 1200px;
@@ -21,7 +23,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100% !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -96,23 +98,25 @@ header{
 
 .companies{
     position: absolute;
-    background: #fff;
+    background: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     bottom: -150px;
     padding: 20px ;
-    left: 13%;
+    left: 20.33%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 135px;
-    max-width: 1320px;
+    gap: 40px;
+    padding: 20px 150px;
+    z-index: 101;
+  
 }
 .companies img{
     width: 150px ;
     
 }
 .company{
-   width: 1700px;
+   /* width: 1700px; */
    
 }
 /* copmany end */
@@ -120,18 +124,24 @@ header{
 /* Desigm start */
 
 .design{
-    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    margin: 60px 40px 50px;
+    margin: 80px 120px;
+    padding: 30px 50px;
+   
+   
+   
+    
+  
     
    
 }
 .design-left {
     display: flex;
-   
+    margin-top: 110px;
+  
     align-items: start;
     flex-direction: column;
     gap: 30px;
@@ -172,34 +182,769 @@ header{
 }
 .design-right {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position:relative;
+    top: -50px;
+    left: 30px;
+   
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-style: italic;
+    
+
+}
+.design-right i{
+  margin-top: 100px;
+}
+/* Desgin end */
+
+/* project-start */
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+.project-left h1{
+    color: #4D533C;
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 60px;
+}
+.project-right p{
+    color: #7a888e;
+    
+}
+
+/* Dvd start */
+
+.DvD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dvd-left{
+    position: relative;
+    margin: 20px 0 40px;
+   
+}
+.dvd-data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: auto;
+    position: absolute;
+    right: -10px;
+    bottom: -40px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+   
    
 }
 
+.dvd-ceo{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    gap: 10px;
+    
+}
+.dvd-ceo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dvd-text{
+    color: #4D533C;
+    font-style: italic;
+   
+}
+.dvd-ceo-text h5{
+    font-weight: bold;
+    color: #4D533C;
+}
+.dvd-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 40px;
+    padding: 10px 20px;
+}
+.dvd-right h2{
+    color: #4D533C;
+    font-weight: 700;
+    font-size: 36px;
 
 
+}
+.dvd-right p{
+    color: #7a888e;
+}
+.dvd-right a{
+    color: #d4d6d4;
+    font-weight: 500;
+    margin-top: 70px;
+}
 
-@media(max-width:768px){
-  .logo{
-    width: 200px;
-  }  
-
+/* Model start */
+.model{
+ 
+ margin: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    
+  
   
 }
-@media(max-width:320px){
+.model-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  
+    
+   
+}
+.model-left h2{
+    color: #4D533C;
+    font-weight: 700;
+    font-size: 36px;
+}
+.model-left p{
+    color: #7a888e;
+}
+.model-left a{
+    color: #d4d6d4;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.model-right{
+
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+.model-data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: auto;
+    position: absolute;
+    left: -30px;
+    bottom: -50px;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+.model-ceo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.model-ceo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.model-text{
+    color: #4D533C;
+    font-style: italic;
+   
+}
+.model-ceo-text h5{
+    font-weight: bold;
+    color: #4D533C;
+}
+
+/* Footer start */
+footer{
+    background-color: #4F553D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 50px;
+    width: 100%;
+}
+.first-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+}
+.footerDiv{
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerDiv span{
+    color: #969f7c;
+}
+.footerDiv b{
+    color: white;
+}
+.second-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    margin-left:-100px;
+}
+.footerDiv1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+.footerDiv1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    margin-left: -35px;
+}
+.footerDiv1 p{
+    font-weight: bold;
+    color: white;
+}
+.footerDiv1 ul li{
+    color: #969f7c;
+}
+.footerDiv2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerDiv2 p{
+    font-weight: bold;
+    color: white;
+}
+.footerDiv2 span{
+    color:#969f7c ;
+}
+.footicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footicons i{
+    padding: 10px;
+    border-radius: 50%;
+    background: #444a34;
+    color: #969f7c;
+}
+.third-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.third-footer b{
+    color: white;
+    font-weight: bold;
+}
+.third-footer p{
+    color: #969f7c;
+}
+
+/* Footer end */
+
+/* Mobile menyu start */
+.mobile-menyu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1.2s ease;
+    width: 0;
+    overflow-x: hidden;
+    z-index: 9999;
+  
+   
+}
+.icons{
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin: 30px ;
+
+}
+.fa-circle-xmark{
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 29px;
+}
+.web{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.search input,button{
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.search button{
+    background: transparent;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+}
+
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 30px;
+}
+.mobile-nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+
+}
+.mobile-nav-links a:hover, .fa-circle-xmark:hover{
+    color: #ffc107;
+}
+.mobile-menyu-acan{
+    width: 100%;
+}
+
+/* Mobile menu end */
+/* karusel start */
+.swiper-slide img{
+    width: 250px;
+    height: 250px;
+  
+    gap: 20px;
+   
+}
+ span.swiper-pagination-bullet {
+    color: #444a34;
+}
+.karusel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px;
+    padding: 15px 30px;
+   
+
+}
+.card{
+    width: 255px;
+    height: 309px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    
+}
+
+
+.card p{
+   color: #7a888e;
+ 
+}
+.card h3{
+    color: #4d533c;
+    font-weight: 500;
+    font-size: 24px;
+}
+.card a{
+    color: #ffc107;
+    font-size: 20px;
+    margin-top: 0 auto;
+  
+}
+
+.idea h2{
+    color: #4d533c ;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* accardion */
+.accordion-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-section h6{
+    color: #ffc107;
+    font-size: 25px;
+}
+.ac-trigger{
+    color: #4D533C !important;
+}
+
+
+
+
+@media (max-width:576px) {
     .logo{
         width: 150px;
     }
     .hero-left h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     .hero-left{
         width: 100%;
         gap: 10px;
     }
+    .hero-left p{
+        font-size: 15px;
+    }
+    .companies{
+        flex-direction: column;
+        bottom: -600px;
+        left: 0;
+        
+    }
+    .DvD{
+        flex-direction: column;
+    }
+    .dvdimage{
+        width: 100% !important;
+    }
+    .dvd-data{
+        left: 0px;
+        bottom: -100%;
+        width: 100%;
+        position: static;
+    }
+    .dvd-left h2{
+        font-size: 20px;
+    }
+    .model{
+        flex-direction: column;
+        margin: 0;  
+ 
+        
+    }
+    .model-left{
+        margin-left: 59px;
+    }
+    .model-left h2{
+        font-size: 20px;
+    }
+    
+    .modelimage{
+        width: 100% !important;
+    }
+    .model-data{
+        position: static;
+        left: 0px;
+        bottom: -100%;
+        width: 100%;
+    }
+    .project{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       flex-direction: column;
+       margin: 0;
+    }
+    .project-left{
+        margin-left: -27px;
+    }
+
+  
+    .design{
+        flex-direction: column;
+        margin-bottom: -800px;
+    }
+    .hero{
+        margin-bottom: 500px;
+    }
+    .design-left{
+        text-align: center;
+    }
+    .design-left h2{
+        font-size: 25px;
+    }
+    .design-left a{
+        margin-bottom: 20px;
+    }
+    .swiper-slide img{
+        margin: 0 auto;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .accordion-section {
+       margin: 20px 40px;
+        
+    }
+    .karusel{
+      margin-top: -26px;
+      margin:  0 auto;
+    }
+    .idea{
+        font-size: 28px;
+    }
+    .reviews{
+        margin-top: -13px;
+    }
+   .accordion-section {
+    margin-top: -80px !important;
+   }
+    
 }
-@media(max-width:576px){
+    
+
+
+
+@media(max-width:884px){
+    .swiper-slide img{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+  .logo{
+    width: 200px;
+  } 
+  .hero-left h2{
+    font-size: 40px;
+  }
+  .hero-left p{
+    font-size: 20px;
+  }
+  .companies{
+    max-width: 884px !important;
+  }
+  .companies img{
+    width: 50px;
+  }
+  
+  .dvdimage{
+    width: 370px !important;
+   
+  }
+  .modelimage{
+    width: 370px !important;
+  }
+  .dvd-right{
+    font-size: 16px;
+  }
+  .dvd-right h2{
+    font-size: 20px;
+  }
+  .model-left{
+    margin-right: 30px;
+  }
+  .dvd-right h2{
+    font-size: 30px;
+  }
+  .card{
+    margin: 0 auto;
+  }
+  .idea {
+    margin: 0 55px;
+  }
+  .accordion-section {
+    margin: 20px 40px;
+     
+ }
+ .karusel{
+    margin-top: -57px;
+ }
+ .reviews{
+    margin-top: -50px;
+}
+.accordion-section {
+    margin-top: -80px !important;
+    
+   }
+ 
+}
+
+@media(max-width:320px){
+    .logo{
+        width: 150px;
+    }
+    .hero-left h2{
+        font-size: 25px;
+    }
+    .hero-left{
+        width: 100%;
+        gap: 10px;
+    }
+    .hero-left p{
+        font-size: 15px;
+    }
+    .companies{
+        flex-direction: column;
+        bottom: -600px;
+        left: 0;
+        
+    }
+    .DvD{
+        flex-direction: column;
+    }
+    .dvdimage{
+        width: 100% !important;
+    }
+    .dvd-data{
+        left: 0px;
+        bottom: -100%;
+        width: 100%;
+        position: static;
+    }
+    .dvd-left h2{
+        font-size: 20px;
+    }
+    .model{
+        flex-direction: column;
+        margin: 0;  
+ 
+        
+    }
+    .model-left{
+        margin-left: 59px;
+    }
+    .model-left h2{
+        font-size: 20px;
+    }
+    
+    .modelimage{
+        width: 100% !important;
+    }
+    .model-data{
+        position: static;
+        left: 0px;
+        bottom: -100%;
+        width: 100%;
+    }
+    .project{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       flex-direction: column;
+       margin: 0;
+    }
+    .project-left{
+        margin-left: -27px;
+    }
+
+  
+    .design{
+        flex-direction: column;
+        margin-bottom: -800px;
+    }
+    .hero{
+        margin-bottom: 500px;
+    }
+    .design-left{
+        text-align: center;
+    }
+    .design-left h2{
+        font-size: 25px;
+    }
+    .design-left a{
+        margin-bottom: 20px;
+    }
+    .card {
+        margin: 0 auto;
+    }
+    .idea{
+        font-size: 24px;
+    }
+ 
+   
+    
+}
+/* @media(max-width:576px){
     .hero-left{
         gap: 10px;
         padding-top: 10px;
     }
+} */
+@media(max-width:1280px){
+    .companies {
+     padding: 20px 100px !important;
+     left: 0px;
+     width: 100%;
+     margin-top: 10px !important;
+    }
+    .companies img{
+        width: 100px;
+    }
+    body{
+        width: 100% !important; 
+    }
+    .design{
+        margin: 0;
+        padding: 0;
+    }
+    .design-right{
+        margin-left: -11px;
+        margin-top: 50px;
+    }
+    .dvdimage{
+        width: 500px;
+    }
+    .dvd-data{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .modelimage{
+        width: 500px;
+    }
+    .model-data{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .reviews{
+        margin-top: -70px !important;
+    }
 }
+

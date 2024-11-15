@@ -5,18 +5,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <!-- bootstrap linki -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- fontawesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css  ">
- 
+  <!-- karusel linki -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- accordion linki -->
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+
+
+
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
   <title>webovio.</title>
 </head>
 
 <body>
+
+
+  <div class="mobile-menyu">
+
+    <div class="icons">
+      <img src="./assets/images/favicon.svg " class="web" alt="">
+      <i class="fa-regular fa-circle-xmark sagol"></i>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projcts</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+      <div class="search">
+        <input type="checkbox " placeholder="Search" id="">
+        <button>Search</button>
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
   <header>
     <div class="container webovio  ">
       <img class="logo" src="./assets/images/header/logo.svg" alt="">
@@ -40,71 +73,431 @@
           <p>Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and
             enterprises.</p>
 
-            <a href="#"><i class="fa-solid fa-caret-right"></i>Get in touch</a>
+          <a href="#" id="contact"><i class="fa-solid fa-caret-right"></i>Get in touch</a>
         </div>
 
 
       </div>
-      
- 
-  
+
+
+
 
 
     </div>
     <div class="companies">
-   
-            <img src="./assets/images/companies/company-1.svg" alt="">
-       
-  
-       
-            <img src="./assets/images/companies/company-2.svg" alt="">
- 
 
-            <img src="./assets/images/companies/company-3.svg" alt="">
-    
-  
-            <img src="./assets/images/companies/company-4.svg" alt="">
-     
-            <img src="./assets/images/companies/company-5.svg" alt="">
-         
-  
-          
+      <img src="./assets/images/companies/company-1.svg" alt="">
+
+
+
+      <img src="./assets/images/companies/company-2.svg" alt="">
+
+
+      <img src="./assets/images/companies/company-3.svg" alt="">
+
+
+      <img src="./assets/images/companies/company-4.svg" alt="">
+
+      <img src="./assets/images/companies/company-5.svg" alt="">
+
+
+
     </div>
-      
-     
-    
+
+
+
   </section>
 
-  
+
   <section class="design ">
     <div class="container design-section">
       <div class="row " style="width: 100%;">
-      <div class="design-left col-12 col-md-6 col-lg-6 ">
-        <span>What we do for you</span>
-        <h2>
-          Strategy. Design  Content. Technology
-Development 
-        </h2>
-        <p>There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="design-left  ">
+            <span>What we do for you</span>
+            <h2>
+              Strategy. Design Content. Technology
+              Development
+            </h2>
+            <p>There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary
+              team
+              with a framework that fosters candid collaboration.</p>
 
-       <a href="#"><i class="fa-solid fa-caret-right"></i> More know About us</a>
+            <a href="#"><i class="fa-solid fa-caret-right"></i> More know About us</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="design-right  ">
+            <i>With More than 10 Years of <br> Knowledge and Expertise we <br> Design and Code Websites and <br> Apps,
+              We
+              Build Brands and Help <br> Them Succeed</i>
+
+            <div class="ceo">
+              <img src="./assets/images/designn/design.svg" alt="">
+              <div class="ceo-text">
+                <h4>Genevieve Rodriquez</h4>
+                <span>Founder & CEO, Webov</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
       </div>
+    </div>
+  </section>
 
-      <div class="design-right col-12 col-md-6 col-lg-6 ">
-        <i>With More than 10 Years of Knowledge and Expertise we Design and Code Websites and Apps, We Build Brands and Help Them Succeed</i>
 
-        <div class="ceo">
-          <img src="./assets/images/designn/design.svg" alt="">
-          <div class="ceo-text">
-          <h4>Genevieve Rodriquez</h4>
-          <span>Founder & CEO, Webov</span>
+  <section class="project">
+    <div class="container project-section">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="project-left">
+            <h1>We Have Some <br>
+              Awesome Project.</h1>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="project-right  ">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the
+              industry's <br> standard dummy text ever since the 1500s,
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="DvD">
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="dvd-left ">
+        <img class="dvdimage" src="./assets/images/Dvd/dvdimg.svg" alt="">
+
+        <div class="dvd-data">
+          <div class="dvd-text">
+            <p>
+              “In my history of working with trade show <br> vendors, I can honestly say that there is not one <br>
+              company that I've
+              ever worked with that has <br> better service than Exhibit Systems.”
+            </p>
+          </div>
+
+
+          <div class="dvd-ceo">
+            <img src="https://agency-webovio.vercel.app/assets/img/Angel.png" alt="">
+            <div class="dvd-ceo-text">
+              <h5>Angel Armstrong</h5>
+              <span>Founder & CEO, Google</span>
+            </div>
+
           </div>
         </div>
 
       </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="dvd-right ">
+        <h2>
+          The wall new <br> Balenciaga.com
+        </h2>
+        <p>This article is floated online with an aim to help you <br> find the best dvd printing solution.</p>
+        <p>Dvd printing is an important feature used by large <br> and small DVD production houses to print information
+          on
+          DVDs.</p>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> See Case Study</a>
       </div>
     </div>
+
   </section>
+
+  <!-- model start
+   -->
+
+  <section class="model">
+
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="model-left ">
+
+        <h2>Is this the future of <br>
+          3D model?</h2>
+        <p>While it was just a TV show, that little speech at the <br> beginning of the original Star Trek show really
+          did
+          do <br> a
+          good job of capturing our feelings about space.</p>
+        <p>It is those feelings that drive our love of astronomy <br> and our desire to learn more and more about it.
+        </p>
+        <a href="#"><i class="fa-solid fa-caret-right"></i> See Case Study</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="model-right ">
+        <img class="modelimage" src="./assets/images/Modell/model.svg" alt="">
+
+        <div class="model-data">
+          <div class="model-text">
+            <p>“I know they are going to be honest with me. I <br> am not going to get a subpar product; I know it <br>
+              is going to
+              be good. That is the number one <br> advantage of working with Exhibit Systems.</p>
+          </div>
+          <div class="model-ceo">
+            <img src="https://agency-webovio.vercel.app/assets/img/Lina.png" alt="">
+            <div class="model-ceo-text">
+              <h5>Lina Hart
+              </h5>
+              <span>Founder & CEO, Jico
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+  <!-- model end -->
+
+  <!-- swipper start -->
+  <div class="karusel py-5">
+    <div class="container">
+      <div class="swiper menimKaruselim">
+        <div class="swiper-wrapper py-5">
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101828859_246042513158214_2148064336253716561_nfull.jpg"
+              alt=""></div>
+
+
+
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101385840_2667918190199058_5277434084403536262_nfull.jpg"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101183570_163433185176419_801555554346684831_nfull.jpg"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101231471_667679957345148_6345634492369991092_nfull.jpg"
+              alt=""></div>
+
+
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101828859_246042513158214_2148064336253716561_nfull.jpg"
+              alt=""></div>
+
+
+
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101385840_2667918190199058_5277434084403536262_nfull.jpg"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101183570_163433185176419_801555554346684831_nfull.jpg"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://konsept.qodeinteractive.com/wp-content/uploads/sb-instagram-feed-images/101231471_667679957345148_6345634492369991092_nfull.jpg"
+              alt=""></div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="swiper-pagination decore"></div>
+      </div>
+    </div>
+  </div>
+  <!-- swipper end -->
+
+  <!-- cards start -->
+  <section class="reviews py-5">
+    <div class="container product">
+      <div class="idea">
+        <h2>Deation & Evaluation - Best Way <br> to Kick off Your Product Idea</h2>
+      </div>
+
+      <div class="swiper reviewsKarusel">
+        <div class="swiper-wrapper py-5" id="reviews">
+          <!-- <div class="swiper-slide">
+            <div class="card" >
+              <div class="card-body">
+                <h3 class="card-title">  <br> Design Sprint</h3>
+                <p class="card-text">A five-day workshop that <br> will help you answer crucial <br> business questions</p>
+                <a href="#"><i class="fa-solid fa-caret-right"></i>Read More</a>
+                
+              </div>
+            </div>
+
+          </div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+  </section>
+  <!-- cards end -->
+
+  <!-- accardion start -->
+   <section class="accordion-section text-center py-5  ">
+    <div class="container">
+      <h6 class="text-uppercase">FAQ</h6>
+      <h3>Frequently asked questions</h3>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="accordion-left ">
+            
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">What are the main types of interior decoration styles?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">The main types of interior decoration styles include modern</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">What is the significance of color in decoration?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">Colors play a vital role in setting the mood and atmosphere of a room.</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">How can I decorate a small room to make it look bigger?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">To make a small room appear larger.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="accordion-right ">
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">What are the essential elements of outdoor decoration?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">Essential elements for outdoor decoration include furniture</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">What is the difference between modern and contemporary?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">Modern decoration refers to a specific time period.</p>
+              </div>
+            </div>
+            <div class="ac">
+              <h2 class="ac-header">
+                <button type="button" class="ac-trigger">How can I add a personal touch to my home decor?</button>
+              </h2>
+              <div class="ac-panel">
+                <p class="ac-text">You can add a personal touch by incorporating personal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+   </section>
+   <!-- accardion end -->
+
+
+
+
+
+  <!-- Footer start -->
+
+  <footer>
+    <div class="container footer">
+      <div class="first-footer">
+        <div class="footerDiv">
+          <span>Phone</span>
+          <b>+32 50 31 28 32</b>
+        </div>
+        <div class="footerDiv">
+          <span>Address</span>
+          <b>491 Merlin Crest Suite 963</b>
+        </div>
+      </div>
+      <div class="second-footer">
+        <div class="footerDiv1">
+          <p>Services</p>
+          <ul>
+            <li>Strategy Design</li>
+            <li>Product Design</li>
+            <li>Content Strategy</li>
+            <li>Brand Strategy</li>
+          </ul>
+        </div>
+        <div class="footerDiv1">
+          <p>Help And Advice</p>
+          <ul>
+            <li>How it works</li>
+            <li>Contact Support</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="footerDiv1">
+          <p>Company</p>
+          <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footerDiv2">
+          <p>Get in Touch</p>
+          <span>Feel free to get in touch with us vai email</span>
+          <p>info.webovio@gmail.com</p>
+          <div class="footicons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <div class="third-footer">
+        <b><img src="./assets/images/favicon.svg" alt=""> WEBOVIO</b>
+        <p>© 2020@webovio. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <!-- Footer end -->
+   <!-- sweet alert linki -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- accordion js -->
+   <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+  <!-- karusel js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
