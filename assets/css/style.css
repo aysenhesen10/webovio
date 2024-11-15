@@ -402,6 +402,20 @@ footer{
 .footerDiv b{
     color: white;
 }
+.footerDiv_adress{
+    color: fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.footerDiv_adress b{
+    color: #fff;
+}
+.footerDiv_adress span{
+    color: #969f7c; 
+}
+
 .second-footer{
     display: flex;
     justify-content: space-evenly;
@@ -736,7 +750,49 @@ footer{
    .accordion-section {
     margin-top: -80px !important;
    }
+   .first-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+   }
+.footerDiv_adress{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.footerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-footer{
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 40px;
+    text-align: center;
+}
+.footerDiv2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.third-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  gap: 40px;
+  flex-direction: column;
+    
+}
+
 }
     
 
@@ -770,6 +826,7 @@ footer{
   }
   .modelimage{
     width: 370px !important;
+
   }
   .dvd-right{
     font-size: 16px;
@@ -780,6 +837,7 @@ footer{
   .model-left{
     margin-right: 30px;
   }
+  
   .dvd-right h2{
     font-size: 30px;
   }
@@ -803,6 +861,15 @@ footer{
     margin-top: -80px !important;
     
    }
+   /* .second-footer{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+   } */
+  
  
 }
 
@@ -937,7 +1004,7 @@ footer{
         font-size: 14px;
     }
     .modelimage{
-        width: 500px;
+        width: 500px ;
     }
     .model-data{
         padding: 5px;
@@ -946,5 +1013,37 @@ footer{
     .reviews{
         margin-top: -70px !important;
     }
+ 
+}
+
+@media (min-width:768px) and (max-width : 884px) {
+       .second-footer{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+   
+   }
+   .model{
+    gap: 20px;
+   }
+   /* .modelimage{
+    margin-left: 10px;
+   } */
+   .karusel{
+    margin: 0 auto;
+   }
+    
+}
+@media (min-width: 1280px) and (max-width : 1440px) {
+   .modelimage{
+    margin-left: 137px; 
+   }
+   .model-data{
+    left: 29px;
+   }
+    
 }
 
