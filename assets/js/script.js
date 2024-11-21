@@ -27,7 +27,7 @@ async function getLocaldanMelumatGetir() {
 
     reviews.forEach(function(birRey)  {
       reylerDivi.innerHTML +=`
-         <div class="swiper-slide">
+         <div class="swiper-slide" >
             <div class="card" >
               <div class="card-body">
                 <h3 class="card-title">${birRey.review_caption}</h3>
@@ -143,3 +143,6 @@ const swiper = new Swiper(".menimKaruselim", {
         },
       },
   });
+
+  // aos
+  AOS.init();

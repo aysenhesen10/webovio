@@ -1046,4 +1046,13 @@ footer{
    }
     
 }
+@media (min-width: 800px) and (max-width:884px){
+    .modelimage{
+        margin-left: 20px;
+    }
+    .karusel{
+        margin: 0 auto;
+    }
+    
+}
 
